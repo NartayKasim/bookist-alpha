@@ -1,0 +1,45 @@
+.booklistTitle {
+   display: flex;
+   padding: 1rem 0.5rem;
+   width: min(100rem, 100%);
+}
+
+.editTitle {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.editTitle > * {
+   align-items: flex-start;
+}
+
+.editTitleButtons {
+   width: 100%;
+   display: flex;
+   gap: 1rem;
+   justify-content: flex-end;
+}
+
+.editTitleButton {
+   cursor: pointer;
+   padding: 0.5rem 2rem;
+   border-radius: 3.5rem;
+   margin: 1rem 0;
+   background: var(--bg-color--secondary);
+   border: none;
+}
+
+.editTitleButton:hover {
+   background: var(--bg-color--accent);
+}
+
+.editTitleButton:focus {
+   outline: 1px solid var(--bg-color--accent);
+}
+
+.title {
+   font-family: var(--font-family--header);
+   font-size: 3rem;
+   font-weight: 600;
+}

@@ -1,0 +1,12 @@
+.booklistPageHeader {
+   display: flex;
+   width: min(100rem, 100%);
+   background: var(--bg-color--tertiary);
+   border-radius: 1rem;
+}
+
+@media only screen and (max-width: 485px) {
+   .booklistPageHeader {
+      border-radius: 0;
+   }
+}

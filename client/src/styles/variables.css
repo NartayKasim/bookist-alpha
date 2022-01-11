@@ -1,0 +1,132 @@
+:root {
+   --font-family--default: "Noto Sans", sans-serif;
+   --font-family--header: "Noto Serif Display", serif;
+   --font-family--special-1: "Poiret One", cursive;
+   --font-family--special-2: "Cinzel Decorative", cursive;
+   --font-color--primary: rgb(34, 34, 34);
+   --font-color--secondary: rgb(240, 222, 214);
+   --font-color--tertiary: rgb(254, 250, 244);
+   --font-color--accent: rgb(255, 87, 87);
+
+   --bg-color--primary: rgb(247, 245, 240);
+   --bg-color--secondary: rgb(240, 234, 231);
+   --bg-color--tertiary: rgb(236, 218, 208);
+   --bg-color--quaternary: hsla(210, 16%, 93%, 0.5);
+   --bg-color--accent: rgb(255, 140, 140);
+   --bg-color--shadowed: linear-gradient(
+      135deg,
+      rgba(236, 218, 208, 0.089) 0%,
+      rgb(252, 250, 244) 100%
+   );
+
+   --box-shadow--emboss: 5px 5px 5px rgb(187, 187, 187),
+      -4px -1px 10px rgb(255, 255, 255), -1px -4px 10px rgb(255, 255, 255);
+
+   --box-shadow--emboss--light: 3px 3px 4px #4444441a, -3px -3px 5px #fffbfb,
+      0px -3px 5px #fffbfb;
+
+   --box-shadow--engrave: inset 2px 2px 4px #44444427, inset 1px -1px 5px white,
+      inset -2px -2px 5px white;
+
+   --cultured: hsla(210, 17%, 98%, 1);
+   --cultured-2: hsla(210, 16%, 93%, 1);
+   --gainsboro: hsla(210, 14%, 89%, 1);
+   --light-gray: hsla(210, 14%, 83%, 1);
+   --cadet-blue-crayola: hsla(210, 11%, 71%, 1);
+   --slate-gray: hsla(208, 7%, 46%, 1);
+   --davys-grey: hsla(210, 9%, 31%, 1);
+   --gunmetal: hsla(210, 10%, 23%, 1);
+   --charleston-green: hsla(210, 11%, 15%, 1);
+
+   --spanish-viridian: hsla(165, 100%, 25%, 1);
+   --spanish-green: hsla(137, 55%, 37%, 1);
+   --green-ryb: hsla(101, 55%, 42%, 1);
+   --apple-green: hsla(81, 77%, 41%, 1);
+   --android-green: hsla(70, 100%, 40%, 1);
+   --bitter-lemon: hsla(65, 100%, 41%, 1);
+   --pear: hsla(61, 100%, 42%, 1);
+   --titanium-yellow: hsla(61, 100%, 44%, 1);
+   --xanthic: hsla(60, 87%, 53%, 1);
+   --maximum-yellow: hsla(60, 100%, 62%, 1);
+
+   --navy-blue: hsla(239, 94%, 19%, 1);
+   --dark-cornflower-blue: hsla(214, 97%, 27%, 1);
+   --star-command-blue: hsla(201, 100%, 36%, 1);
+   --blue-green: hsla(195, 100%, 39%, 1);
+   --cerulean-crayola: hsla(190, 100%, 42%, 1);
+   --sky-blue-crayola: hsla(190, 74%, 59%, 1);
+   --sky-blue-crayola-2: hsla(189, 75%, 75%, 1);
+   --blizzard-blue: hsla(190, 76%, 82%, 1);
+   --powder-blue: hsla(190, 77%, 88%, 1);
+
+   --heat-wave: hsla(29, 100%, 50%, 1);
+   --yellow-orange-color-wheel: hsla(35, 100%, 50%, 1);
+   --chrome-yellow: hsla(40, 100%, 50%, 1);
+   --selective-yellow: hsla(43, 100%, 50%, 1);
+   --cyber-yellow: hsla(49, 100%, 50%, 1);
+   --middle-yellow: hsla(55, 100%, 50%, 1);
+
+   --xiketic: hsla(231, 82%, 6%, 1);
+   --dark-sienna: hsla(339, 80%, 12%, 1);
+   --rosewood: hsla(354, 93%, 22%, 1);
+   --dark-red: hsla(358, 97%, 31%, 1);
+   --rosso-corsa: hsla(0, 100%, 41%, 1);
+   --vermilion: hsla(12, 98%, 44%, 1);
+   --persimmon: hsla(23, 97%, 46%, 1);
+}
+
+/* 
+HEX BACKUPS:
+--cultured: #f8f9faff;
+--cultured-2: #e9ecefff;
+--gainsboro: #dee2e6ff;
+--light-gray: #ced4daff;
+--cadet-blue-crayola: #adb5bdff;
+--slate-gray: #6c757dff;
+--davys-grey: #495057ff;
+--gunmetal: #343a40ff;
+--charleston-green: #212529ff; 
+
+--spanish-viridian: #007f5fff;
+--spanish-green: #2b9348ff;
+--green-ryb: #55a630ff;
+--apple-green: #80b918ff;
+--android-green: #aacc00ff;
+--bitter-lemon: #bfd200ff;
+--pear: #d4d700ff;
+--titanium-yellow: #dddf00ff;
+--xanthic: #eeef20ff;
+--maximum-yellow: #ffff3fff;
+
+--heat-wave: #ff7b00ff;
+--dark-orange: #ff8800ff;
+--yellow-orange-color-wheel: #ff9500ff;
+--orange-web: #ffa200ff;
+--chrome-yellow: #ffaa00ff;
+--selective-yellow: #ffb700ff;
+--mikado-yellow: #ffc300ff;
+--cyber-yellow: #ffd000ff;
+--sizzling-sunrise: #ffdd00ff;
+--middle-yellow: #ffea00ff;
+
+--navy-blue: #03045eff;
+--dark-cornflower-blue: #023e8aff;
+--star-command-blue: #0077b6ff;
+--blue-green: #0096c7ff;
+--cerulean-crayola: #00b4d8ff;
+--sky-blue-crayola: #48cae4ff;
+--sky-blue-crayola-2: #90e0efff;
+--blizzard-blue: #ade8f4ff;
+--powder-blue: #caf0f8ff;
+
+--xiketic: #03071eff;
+--dark-sienna: #370617ff;
+--rosewood: #6a040fff;
+--dark-red: #9d0208ff;
+--rosso-corsa: #d00000ff;
+--vermilion: #dc2f02ff;
+--persimmon: #e85d04ff;
+--carrot-orange: #f48c06ff;
+--orange-web: #faa307ff;
+--selective-yellow: #ffba08ff;
+*/

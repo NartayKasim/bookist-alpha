@@ -1,0 +1,14 @@
+.cover {
+   position: relative;
+   background: var(--bg-color--default);
+   z-index: 2;
+}
+
+.coverImage {
+   z-index: 3;
+}
+
+.coverSplash {
+   width: 100%;
+   z-index: -1;
+}

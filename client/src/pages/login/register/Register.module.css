@@ -1,0 +1,72 @@
+.registerWrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   flex-grow: 1;
+}
+
+.registerBody {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   justify-content: center;
+   align-items: center;
+}
+
+.labels {
+   width: 100%;
+   text-align: center;
+}
+
+.inputWrapper {
+   position: relative;
+   width: 30rem;
+   height: 3.5rem;
+   border-radius: 3.5rem;
+   background: var(--bg-color--secondary);
+   border: 3px solid var(--bg-color--secondary);
+   box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.363);
+   margin: 1rem;
+}
+
+.inputIcon {
+   position: absolute;
+   left: 0.9rem;
+   top: 0.2rem;
+   z-index: 2;
+   opacity: 0.7;
+}
+
+.input {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   border-radius: 3.5rem;
+   background: var(--bg-color--secondary);
+   border: none;
+   padding-right: 1rem;
+   padding-left: 4.5rem;
+}
+
+.input:focus {
+   background: var(--bg-color--primary);
+   outline: none;
+}
+
+.errors {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 3rem;
+   color: red;
+}
+
+.registerButtons {
+   display: flex;
+   width: 100%;
+   padding: 2rem 0;
+   padding-right: 2.7rem;
+   justify-content: flex-end;
+}

@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   /* min-height: 100vh; */
+   overflow: auto;
+   /* width: 100%; */
+}
+
+body {
+   /* min-height: 100vh; */
+   box-sizing: border-box;
+   background: var(--bg-color--primary);
+   margin: 0;
+   /* overflow: auto; */
+}
+
+body,
+#root {
+   /* min-height: 100vh; */
+   overflow: auto;
+   width: 100%;
+}
+
+textarea {
+   width: 100%;
+   height: 10rem;
+   border: none;
+   padding: 1rem;
+   box-shadow: var(--box-shadow--engrave);
+   background: var(--bg-color--primary);
+   font-family: var(--font-family--default);
+   border: 1px solid var(--bg-color--secondary);
+   border-radius: 1rem;
+   font-size: 1.4rem;
+   resize: none;
+}
+
+textarea:focus {
+   border: 3px solid var(--bg-color--secondary);
+   outline: none;
+}
+
+#root {
+   position: relative;
+   z-index: 0;
+   height: 100vh;
+}
+
+nav {
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 6;
+   background: var(--bg-color--primary);
+}
+
+.page {
+   position: relative;
+   /* width: 100%; */
+   height: 76vh;
+   display: flex;
+   z-index: 0;
+   /* overflow: auto; */
+}

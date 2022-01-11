@@ -1,0 +1,73 @@
+.reviews {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.composeReview {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.composeReviewButtons {
+   display: flex;
+   gap: 1rem;
+   justify-content: flex-end;
+}
+
+.review {
+   display: flex;
+   flex-direction: column;
+   border-radius: 1rem;
+}
+
+.reviewHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem;
+   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.reviewBody {
+   display: flex;
+   padding: 0.5rem;
+   padding-left: 5rem;
+   background: var(--bg-color--quaternary);
+   border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.reviewFooter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem 0;
+   padding-left: 5rem;
+}
+
+.reviewButtons {
+   display: flex;
+   justify-content: flex-end;
+   gap: 1rem;
+}
+
+.reviewButton {
+   cursor: pointer;
+   padding: 0.7rem 2rem;
+   border-radius: 3.5rem;
+   background: var(--bg-color--secondary);
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.reviewButton:hover {
+   background: var(--bg-color--accent);
+}
+
+.reviewButton:focus {
+   outline: 1px solid var(--bg-color--accent);
+}

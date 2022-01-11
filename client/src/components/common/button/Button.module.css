@@ -1,0 +1,29 @@
+.buttonWrapper {
+   background: rgb(221, 221, 221);
+   background: linear-gradient(
+      135deg,
+      rgba(221, 221, 221, 0.161888551176264) 0%,
+      rgba(255, 252, 247, 1) 100%
+   );
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   cursor: pointer;
+   padding: 1rem 2rem;
+   border-radius: 3.5rem;
+   box-shadow: var(--box-shadow--emboss);
+}
+
+.buttonWrapper:hover {
+   background: var(--bg-color--accent);
+}
+
+.buttonWrapper:focus {
+   outline: none;
+   background: var(--bg-color--tertiary);
+}
+
+.buttonWrapper:active {
+   box-shadow: none;
+}

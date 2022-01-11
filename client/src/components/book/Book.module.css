@@ -1,0 +1,129 @@
+.bookWrapper {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: min(65rem, 100%);
+   gap: 1rem;
+}
+
+.bookHeader {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.titleWrapper {
+   font-weight: 600;
+   font-family: var(--font-family--header);
+   font-size: 2.5rem;
+   padding-left: 0.5rem;
+   cursor: pointer;
+}
+
+.titleWrapper:hover {
+   text-decoration: underline;
+}
+
+.authorsWrapper {
+   padding-left: 2rem;
+}
+
+.bookBody {
+   position: relative;
+   display: flex;
+   z-index: 2;
+   gap: 2rem;
+}
+
+.bookBodyLeft {
+   padding-left: 2rem;
+   position: relative;
+}
+
+.bookBodyRight {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+
+.ratingsWrapper {
+   display: flex;
+   gap: 3rem;
+}
+
+.bookBodySplash {
+   position: relative;
+   overflow: hidden;
+   width: 35rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+}
+
+.coverSplash {
+   position: absolute;
+   width: 50%;
+   z-index: 0;
+   top: -50%;
+   right: 0;
+   opacity: 0.15;
+   border-radius: 0 2rem 2rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.623) 40%, transparent);
+}
+
+@media only screen and (max-width: 690px) {
+   .bookWrapper {
+      flex-direction: column;
+      padding: 2rem;
+      padding-bottom: 3rem;
+      background: var(--bg-color--secondary);
+   }
+
+   .bookWrapper:nth-child(2n) {
+      background: var(--bg-color--primary);
+   }
+
+   .bookHeader {
+      align-items: center;
+   }
+
+   .titleWrapper {
+      padding: 0;
+   }
+
+   .authorsWrapper {
+      padding: 0;
+   }
+
+   .bookBody {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+   }
+
+   .bookBodyLeft {
+      padding: 0;
+   }
+
+   .ratingsWrapper {
+      justify-content: center;
+   }
+
+   .descriptionWrapper {
+      display: flex;
+      justify-content: center;
+   }
+}
+
+@media only screen and (max-width: 430px) {
+   .ratingsWrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+   }
+}

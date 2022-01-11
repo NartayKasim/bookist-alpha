@@ -1,0 +1,19 @@
+.libraryPageWrapper {
+   position: relative;
+   width: min(100rem, 97%);
+   display: flex;
+   flex-direction: column;
+   margin: 5vh auto;
+   gap: 5rem;
+}
+
+.libraryPageHeader {
+   width: 100%;
+   font-family: var(--font-family--header);
+   font-size: 3.5rem;
+   font-weight: 600;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   color: var(--font-color--accent);
+}

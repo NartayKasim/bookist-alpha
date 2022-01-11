@@ -1,0 +1,28 @@
+.rating {
+   display: flex;
+}
+
+.ratingActive {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   line-height: 1.5rem;
+   color: var(--font-color--primary);
+}
+
+.ratingPassive {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   line-height: 1.5rem;
+   color: var(--font-color--primary);
+}
+
+.starGenerator {
+   display: flex;
+   align-items: center;
+}
+
+.starImage {
+   width: 2rem;
+}

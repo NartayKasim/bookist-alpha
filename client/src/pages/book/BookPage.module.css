@@ -1,0 +1,151 @@
+.bookPageWrapper {
+   position: relative;
+   width: min(100rem, 100%);
+   display: flex;
+   flex-direction: column;
+   margin: 3vh auto;
+}
+
+.bookPage {
+   position: relative;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   gap: 8rem;
+}
+
+.bookPageLeftWrapper {
+   position: relative;
+   width: 40rem;
+   display: flex;
+   flex-direction: column;
+   border-radius: 2rem;
+}
+
+.bookPageLeft {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   border-radius: 2rem;
+}
+
+.bookPageLeftContent {
+   position: relative;
+   width: 100%;
+   border-radius: 2rem;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   padding: 2rem 4rem;
+}
+
+.coverWrapper {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.titleWrapper {
+   text-align: left;
+   display: flex;
+   font-family: var(--font-family--header);
+   font-size: 3rem;
+   font-weight: 600;
+   line-height: 3.6rem;
+   color: var(--charleston-green);
+   padding-top: 2rem;
+}
+
+.authorsWrapper {
+   text-align: left;
+   display: flex;
+}
+
+.ratingsWrapper {
+   padding-top: 2rem;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.ratingsWrapper > * > * {
+   width: 18rem;
+   justify-content: space-between;
+}
+
+.bookPageRight {
+   width: 52rem;
+   height: 100%;
+   padding: 2rem 0 2rem 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.bookPageRightSeparator {
+   height: 2rem;
+   width: 100%;
+   box-shadow: var(--box-shadow--engrave);
+   border-radius: 2rem;
+}
+
+@media only screen and (max-width: 1300px) {
+   .bookPageWrapper {
+      padding: 0 2rem;
+   }
+   .bookPage {
+      gap: 5rem;
+   }
+}
+
+@media only screen and (max-width: 1070px) {
+   .bookPage {
+      gap: 3rem;
+   }
+}
+
+@media only screen and (max-width: 820px) {
+   .bookPageWrapper {
+      padding: 0 5rem;
+   }
+
+   .bookPage {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .bookPageLeftWrapper {
+      margin: 0 auto;
+      width: 100%;
+   }
+
+   .bookPageLeftContent > * {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .bookPageRight {
+      width: 100%;
+      padding: 2rem 15%;
+      box-shadow: var(--box-shadow--engrave);
+      border-radius: 2rem;
+   }
+}
+
+@media only screen and (max-width: 625px) {
+   .bookPageLeftContent {
+      padding: 2rem 0;
+      box-shadow: none !important;
+   }
+
+   .bookPageWrapper {
+      padding: 0 1rem;
+   }
+   .bookPageRight {
+      padding: 2rem 2rem;
+      box-shadow: none;
+   }
+}

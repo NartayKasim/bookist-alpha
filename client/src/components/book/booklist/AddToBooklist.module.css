@@ -1,0 +1,130 @@
+.addToBooklist {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 2;
+   padding-top: 2rem;
+}
+
+.currentBooklists {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.currentBooklist {
+   font-weight: 600;
+   cursor: pointer;
+   z-index: 2;
+}
+
+.currentBooklist:hover {
+   text-decoration: underline;
+}
+
+.addToBooklistButton {
+   cursor: pointer;
+   padding: 0.7rem 2rem;
+   border-radius: 3.5rem;
+   margin: 2rem 0;
+   background: var(--bg-color--secondary);
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 14rem;
+}
+
+.addToBooklistButton:hover {
+   background: var(--bg-color--accent);
+}
+
+.addToBooklistButton:focus {
+   outline: 1px solid var(--bg-color--accent);
+}
+
+.availableBooklists {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.availableBooklist {
+   cursor: pointer;
+   z-index: 2;
+   font-weight: 600;
+}
+
+.availableBooklist:hover {
+   text-decoration: underline;
+}
+
+.createNewBooklistHeader {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.createNewBooklistInput {
+   display: flex;
+   justify-content: flex-start;
+}
+
+.errorState {
+   height: 3rem;
+   width: 30rem;
+   display: flex;
+   color: var(--rosso-corsa);
+}
+
+.createNewBooklistButtons {
+   width: 30rem;
+   display: flex;
+}
+
+.createNewBooklistButtons > * {
+   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 820px) {
+   .addToBooklist {
+      width: 100%;
+   }
+
+   .currentBooklists {
+      align-items: center;
+   }
+
+   .addToBooklistButton {
+      margin: 1rem auto;
+   }
+
+   .availableBooklistsWrapper {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .availableBooklists {
+      align-items: center;
+   }
+
+   .createNewBooklist > * {
+      align-items: center;
+   }
+
+   .createNewBooklistInput {
+      justify-content: center;
+   }
+
+   .errorState {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+   }
+
+   .createNewBooklistButtons {
+      width: 100%;
+      justify-content: center;
+      margin: 0;
+   }
+}

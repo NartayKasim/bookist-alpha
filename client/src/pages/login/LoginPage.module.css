@@ -1,0 +1,80 @@
+.loginPageWrapper {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 88vh;
+}
+
+.loginInner {
+   width: min(35rem, 100%);
+   margin: 0 auto;
+   height: 58rem;
+   gap: 3rem;
+   display: flex;
+   flex-direction: column;
+   border-radius: 2rem;
+   box-shadow: var(--box-shadow--emboss);
+   background: rgb(221, 221, 221);
+   background: linear-gradient(
+      135deg,
+      rgba(221, 221, 221, 0.161888551176264) 0%,
+      rgba(255, 252, 247, 1) 100%
+   );
+}
+
+.header {
+   width: 100%;
+   height: 8rem;
+   gap: 1rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.selected {
+   font-family: var(--font-family--header);
+   color: var(--davys-grey);
+   border-bottom: 1px solid var(--bg-color--secondary);
+   height: 100%;
+   font-size: 1.7rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   text-decoration: underline;
+}
+
+.unselected {
+   font-family: var(--font-family--header);
+   color: var(--davys-grey);
+   border-bottom: 1px solid var(--bg-color--secondary);
+   height: 100%;
+   font-size: 1.7rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+}
+
+.login:hover,
+.register:hover {
+   text-decoration: underline;
+}
+
+.body {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+@media only screen and (max-height: 856px) {
+   .loginPageWrapper {
+      padding: 2vh 0;
+   }
+}

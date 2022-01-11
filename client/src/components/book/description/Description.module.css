@@ -1,0 +1,44 @@
+.descriptionWrapper {
+   position: relative;
+   width: min(50rem, 100%);
+   display: flex;
+   flex-direction: column;
+}
+
+.description {
+   position: relative;
+   color: var(--davys-grey);
+   width: min(50rem, 100%);
+   font-size: 1.1rem;
+   line-height: 2.4rem;
+   height: 9rem;
+   overflow: hidden;
+}
+
+.expandDescriptionRow {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.expandDescriptionButton {
+   background: none;
+   border: none;
+   color: var(--davys-grey);
+   font-size: 1.2rem;
+   font-weight: 600;
+   cursor: pointer;
+   padding-top: 0.5rem;
+}
+
+.expandDescriptionButton:hover {
+   text-decoration: underline;
+   transition: text-decoration 0.5s;
+}
+
+.bookPageDescriptionWrapper {
+   width: 100%;
+   max-width: 60rem;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}

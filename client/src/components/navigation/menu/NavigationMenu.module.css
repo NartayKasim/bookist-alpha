@@ -1,0 +1,62 @@
+.navigationMenu {
+   display: flex;
+   gap: 3rem;
+   align-items: center;
+   padding: 0 2rem;
+   border-radius: 3.5rem;
+   background: var(--bg-color--primary);
+   box-shadow: var(--box-shadow--emboss);
+   width: 40rem;
+   justify-content: space-between;
+}
+
+.navigationMenuMobile {
+   display: none;
+}
+
+.menuIcon {
+   z-index: 3;
+   opacity: 0.6;
+   width: 1.6rem;
+}
+
+.linksLink {
+   font-family: var(--font-family--default);
+   color: var(--gunmetal);
+   text-decoration: none;
+   font-size: 1.35rem;
+   cursor: pointer;
+   height: 4rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.linksLinkLast {
+   font-family: var(--font-family--default);
+   color: var(--gunmetal);
+   text-decoration: none;
+   font-size: 1.35rem;
+   cursor: pointer;
+   height: 4rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.linksLink:hover,
+.linksLinkLast:hover {
+   text-decoration: underline;
+}
+
+@media only screen and (max-width: 755px) {
+   .navigationMenu {
+      box-shadow: none;
+   }
+}
+
+@media only screen and (max-width: 650px) {
+   .navigationMenu {
+      background: var(--bg-color--default);
+   }
+}

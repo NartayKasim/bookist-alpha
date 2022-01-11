@@ -1,0 +1,59 @@
+.booklistFooter {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   padding: 1.5rem;
+   z-index: 1;
+   border-radius: 0 0 1rem 1rem;
+   width: min(100rem, 100%);
+}
+
+.footerTop {
+   width: 100%;
+   color: var(--font-color--accent);
+}
+
+.footerBottom {
+   display: flex;
+   padding: 1rem;
+}
+
+.footerBottomTop {
+   width: 100%;
+}
+
+.footerBottomLeft {
+   width: 50%;
+   display: flex;
+}
+
+.footerBottomRight {
+   width: 50%;
+   display: flex;
+   gap: 3rem;
+   justify-content: flex-end;
+}
+
+.footerItem {
+   cursor: pointer;
+}
+
+.footerItem:hover {
+   text-decoration: underline;
+}
+
+@media only screen and (max-width: 485px) {
+   .footerBottom {
+      flex-direction: column;
+      padding-left: 1.5rem;
+   }
+
+   .footerBottom {
+      flex-direction: column;
+   }
+
+   .footerBottomRight {
+      flex-direction: column;
+      gap: 0;
+   }
+}

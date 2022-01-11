@@ -1,0 +1,26 @@
+.booklistPageWrapper {
+   position: relative;
+   width: min(100rem, 100%);
+   display: flex;
+   flex-direction: column;
+   margin: 5vh auto;
+   align-items: center;
+}
+
+.booklistPageBody {
+   display: grid;
+   width: min(100rem, 100%);
+   grid-template-columns: repeat(auto-fit, minmax(65px, 85px));
+   justify-content: center;
+   gap: 4rem;
+   padding: 0 2rem;
+   margin: 5rem 0;
+   position: relative;
+}
+
+@media only screen and (max-width: 485px) {
+   .booklistPageBody {
+      padding: 0;
+      gap: 2.5rem;
+   }
+}

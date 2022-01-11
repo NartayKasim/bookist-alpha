@@ -1,0 +1,38 @@
+.booklistItem {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 9rem;
+   height: 137px;
+}
+
+.coverWrapper {
+   cursor: pointer;
+}
+
+.removeBookButton {
+   position: absolute;
+   top: -1rem;
+   right: -1rem;
+   z-index: 2;
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--davys-grey);
+   background: var(--bg-color--tertiary);
+   border: none;
+   cursor: pointer;
+}
+
+.removeBookButton:hover {
+   background: var(--bg-color--accent);
+}
+
+.removeBookButton:active {
+   background: var(--bg-color--secondary);
+}
