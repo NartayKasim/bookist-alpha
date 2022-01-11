@@ -1,0 +1,1 @@
+INSERT INTO booklists (user_id, booklist_title) VALUES ($1, 'reviewed') RETURNING *;

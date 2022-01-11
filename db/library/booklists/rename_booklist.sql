@@ -1,0 +1,1 @@
+UPDATE booklists SET booklist_title = $2 WHERE booklist_id = $1;

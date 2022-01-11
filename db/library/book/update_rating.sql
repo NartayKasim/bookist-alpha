@@ -1,0 +1,1 @@
+UPDATE ratings SET rating = $3 WHERE user_id = $1 AND book_id = $2;

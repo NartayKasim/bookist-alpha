@@ -1,0 +1,1 @@
+UPDATE reviews SET content = $2 WHERE review_id = $1;

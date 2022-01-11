@@ -1,0 +1,1 @@
+SELECT booklist_id FROM booklists WHERE booklist_title = 'reviewed' AND user_id = $1

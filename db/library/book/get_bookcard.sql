@@ -1,0 +1,1 @@
+SELECT * FROM bookcards WHERE title = $1 AND author = $2;

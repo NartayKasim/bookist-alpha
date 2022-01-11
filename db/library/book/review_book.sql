@@ -1,0 +1,1 @@
+INSERT INTO reviews (user_id, book_id, content) VALUES ($1, $2, $3);

@@ -1,0 +1,1 @@
+DELETE FROM reviews WHERE reviews.review_id=$1;

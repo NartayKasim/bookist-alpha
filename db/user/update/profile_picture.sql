@@ -1,0 +1,1 @@
+UPDATE users SET profile_picture=$2 WHERE id=$1 RETURNING *;

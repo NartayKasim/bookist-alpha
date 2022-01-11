@@ -1,0 +1,1 @@
+DELETE FROM booklists WHERE user_id = $1 AND booklist_title = $2;

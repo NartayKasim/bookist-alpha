@@ -1,0 +1,1 @@
+SELECT json_agg(booklists) FROM booklists WHERE user_id = $1;

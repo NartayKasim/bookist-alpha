@@ -1,0 +1,1 @@
+SELECT * FROM library_booklists WHERE book_id = $1 AND booklist_id = $2;

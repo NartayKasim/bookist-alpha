@@ -1,0 +1,1 @@
+INSERT INTO ratings (user_id, book_id, rating) VALUES ($1, $2, $3);

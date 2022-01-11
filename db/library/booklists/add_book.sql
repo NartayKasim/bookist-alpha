@@ -1,0 +1,1 @@
+INSERT INTO library_booklists (book_id, booklist_id) VALUES ($1, $2) RETURNING *;
